@@ -1,3 +1,40 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
 body{
-    background-color: blue;
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;   /* coloca tudo na mesma linha*/
+    flex-direction: row;
+    align-items: center; /*alinha de maneira vertical*/
+    justify-content: space-between; /* alinha de maneira horizontal*/
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Back', Times;
+    font-size: 40px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*muda a cor do link quando o mouse passa por cima*/
+    color: #fff;
 }
